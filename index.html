@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkylensHB — Aerial photography, Hawke's Bay</title>
+<meta name="description" content="Aerial photography and drone video for construction, earthworks, and property projects across Hawke's Bay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0F2A44;
+    --ink-2: #163A5C;
+    --paper: #F7F5F1;
+    --amber: #E9A23B;
+    --text: #1D2530;
+    --muted: #5B6672;
+    --line: rgba(15,42,68,0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--amber);
+  }
+  h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+  /* Nav */
+  nav.wrap { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; }
+  .logo { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; }
+  .navlinks { display: flex; gap: 32px; font-size: 14px; }
+  .navlinks a { text-decoration: none; color: var(--muted); }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .wrap { padding: 56px 32px 64px; position: relative; z-index: 2; }
+  .hero h1 { font-size: 38px; max-width: 620px; color: #fff; }
+  .hero p.lead { font-size: 16px; color: rgba(255,255,255,0.7); max-width: 480px; margin: 18px 0 28px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--amber);
+    color: #2A1B04;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 13px 24px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: none;
+  }
+  .btn.ghost {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .contours {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  /* Services */
+  .services { padding: 56px 0; }
+  .section-head { max-width: 560px; margin-bottom: 32px; }
+  .section-head h2 { font-size: 26px; margin-top: 10px; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .card { background: var(--paper); padding: 26px; }
+  .card .num { font-weight: 600; font-size: 13px; color: var(--amber); }
+  .card h3 { font-size: 17px; margin: 14px 0 8px; }
+  .card p { font-size: 14px; color: var(--muted); }
+
+  /* About */
+  .about { padding: 56px 0; border-top: 1px solid var(--line); }
+  .about h2 { font-size: 26px; margin: 10px 0 16px; max-width: 620px; }
+  .about p { color: var(--muted); font-size: 15px; margin-bottom: 12px; max-width: 620px; }
+
+  /* Contact */
+  .contact { background: var(--ink); color: #fff; padding: 56px 0; text-align: center; }
+  .contact .eyebrow { color: var(--amber); }
+  .contact h2 { color: #fff; font-size: 26px; margin: 12px 0 14px; }
+  .contact p { color: rgba(255,255,255,0.65); max-width: 460px; margin: 0 auto 28px; }
+  .contact-details {
+    display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+    margin-top: 32px; font-size: 13px;
+    color: rgba(255,255,255,0.55);
+  }
+
+  footer { padding: 20px 32px; text-align: center; font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 720px) {
+    .hero h1 { font-size: 30px; }
+    nav.wrap { flex-direction: column; gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">SkylensHB</div>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <svg class="contours" viewBox="0 0 1080 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,60 C200,30 400,90 600,60 C800,30 1000,75 1080,55" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+    <path d="M0,120 C220,150 420,90 640,120 C820,145 980,100 1080,120" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+    <path d="M0,190 C200,210 460,165 660,195 C860,220 980,180 1080,195" stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none"/>
+  </svg>
+  <div class="wrap">
+    <h1>Aerial photography for construction and earthworks</h1>
+    <p class="lead">Site progress photography, drone video, and property marketing shots for commercial clients across Hawke's Bay.</p>
+    <a class="btn" href="#contact">Get a quote</a>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Services</div>
+      <h2>What we do</h2>
+    </div>
+    <div class="grid3">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Site progress photography</h3>
+        <p>Regular aerial updates tracking construction and earthworks progress over the life of a project.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Aerial video flyovers</h3>
+        <p>Short drone video for progress reports, stakeholder updates, or marketing.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Property marketing photos</h3>
+        <p>Aerial images for real estate, retirement villages, and commercial property listings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <h2>Local, hands-on, easy to work with</h2>
+    <p>SkylensHB provides aerial photography and video across Hawke's Bay, working directly with construction, earthworks, and property clients who need clear, reliable site documentation.</p>
+    <p>Recent project work has covered construction and earthworks progress photography, along with property imagery for retirement village and residential developments in the region.</p>
+    <p>Based in Havelock North, available for ongoing project work or one-off shoots.</p>
+    <!-- TODO Johnson: add years running the business + any CAA drone certification/insurance once confirmed -->
+    <!-- TODO Johnson: once you've checked with Oneshot Earthworks and Summerset, you can name them directly in the paragraph above -->
+  </div>
+</section>
+
+<!--
+  TODO Johnson: once you have a strong set of photos, add a gallery section here, e.g.:
+  <div class="grid3"><img src="photos/site1.jpg" alt="..."><img src="photos/site2.jpg" alt="..."></div>
+  Keep it to your best 6-10 shots, captioned with project name and date.
+-->
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Have a project that needs documenting?</h2>
+    <p>Get in touch for a quote, no job too small or too big.</p>
+    <a class="btn ghost" href="mailto:johnson.blakely09@gmail.com?subject=Quote%20request">Email SkylensHB</a>
+    <div class="contact-details">
+      <span>johnson.blakely09@gmail.com</span>
+      <span>021 02277535</span>
+      <span>Havelock North, Hawke's Bay</span>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; SkylensHB, Hawke's Bay</footer>
+
+</body>
+</html>
